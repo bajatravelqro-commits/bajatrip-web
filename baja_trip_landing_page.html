@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baja Trip | Transporte Ejecutivo a Conciertos desde Querétaro</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#131c31',
+                        neonPurple: '#a855f7',
+                        neonMagenta: '#ec4899',
+                        neonBlue: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Inter Font & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f19; color: #f3f4f6; }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(168, 85, 247, 0.35);
+        }
+        .glow-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 30px rgba(236, 72, 153, 0.8);
+            transform: translateY(-2px);
+        }
+        .card-border {
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            transition: all 0.3s ease;
+        }
+        .card-border:hover {
+            border-color: rgba(236, 72, 153, 0.6);
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-100 min-h-screen flex flex-col selection:bg-pink-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 to-pink-500 flex items-center justify-center glow-effect">
+                    <i class="fa-solid fa-bus text-white text-lg"></i>
+                </div>
+                <span class="text-xl sm:text-2xl font-extrabold tracking-wider bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+                    BAJA TRIP
+                </span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="#rutas" class="hover:text-pink-400 transition-colors">Próximas Rutas</a>
+                <a href="#asistente-ia" class="hover:text-pink-400 transition-colors">Asistente IA</a>
+                <a href="#beneficios" class="hover:text-pink-400 transition-colors">Beneficios</a>
+                <a href="#como-funciona" class="hover:text-pink-400 transition-colors">¿Cómo Funciona?</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/5214428794383?text=¡Hola!%20Quiero%20más%20información%20sobre%20el%20transporte%20a%20conciertos%20desde%20Querétaro." target="_blank" 
+                   class="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-4 py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-emerald-900/30">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-16 sm:py-24 lg:py-32 flex items-center justify-center">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 left-1/4 w-72 h-72 bg-pink-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center space-x-2 bg-purple-950/80 border border-purple-500/30 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-purple-300 mb-6 backdrop-blur-sm">
+                <span class="flex h-2 w-2 rounded-full bg-pink-500 animate-pulse"></span>
+                <span>Salidas Oficiales desde Querétaro y San Juan del Río</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Tu viaje, tu música. <br>
+                <span class="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 bg-clip-text text-transparent">
+                    Transporte redondo a conciertos desde Qro.
+                </span>
+            </h1>
+            
+            <p class="max-w-2xl mx-auto text-base sm:text-lg lg:text-xl text-gray-300 mb-10 leading-relaxed">
+                Viaja seguro, cómodo y sin preocuparte por manejar desvelado. Unidades ejecutivas equipadas, seguro de viajero y coordinador a bordo.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/5214428794383?text=¡Hola!%20Quiero%20apartar%20mi%20lugar%20con%20el%2050%%20para%20las%20próximas%20rutas%20de%20Baja%20Trip." target="_blank"
+                   class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-purple-600 via-pink-600 to-pink-500 text-white font-bold px-8 py-4 rounded-2xl text-base sm:text-lg glow-button">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Aparta tu lugar por WhatsApp (50% anticipo)</span>
+                </a>
+            </div>
+
+            <!-- Trust badges -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-gray-800/80 text-gray-400 text-sm">
+                <div class="flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-shield-halved text-purple-400 text-lg"></i>
+                    <span>Seguro de Viajero</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-bus text-pink-400 text-lg"></i>
+                    <span>Unidades Ejecutivas</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-user-shield text-blue-400 text-lg"></i>
+                    <span>Coordinador a Bordo</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-clock-rotate-left text-emerald-400 text-lg"></i>
+                    <span>Regreso Garantizado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximas Rutas -->
+    <section id="rutas" class="py-20 bg-darkBg/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold tracking-widest text-pink-400 uppercase mb-3">DESTINOS CONFIRMADOS</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Próxima Ruta Activa</h3>
+                <p class="mt-4 text-gray-400 text-base sm:text-lg">Aparta tu asiento con tiempo. ¡Cupo limitado a 55 pasajeros por autobús!</p>
+            </div>
+
+            <!-- Event Card: Karol G -->
+            <div class="max-w-4xl mx-auto bg-cardBg rounded-3xl card-border overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12">
+                <div class="lg:col-span-5 relative bg-gradient-to-br from-purple-900/60 to-pink-900/60 p-8 flex flex-col justify-between">
+                    <div class="absolute top-4 right-4 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">
+                        ¡Alta Demanda!
+                    </div>
+                    <div>
+                        <span class="text-purple-300 text-xs font-semibold tracking-wider uppercase">Gira Oficial 2026</span>
+                        <h4 class="text-3xl sm:text-4xl font-black text-white mt-1 mb-2">Karol G</h4>
+                        <p class="text-gray-200 text-sm flex items-center space-x-2 mt-2">
+                            <i class="fa-solid fa-location-dot text-pink-400"></i>
+                            <span>Ciudad de México (CDMX)</span>
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-gray-400 text-xs block">Fecha del Evento</span>
+                            <span class="text-white font-bold text-base">13 de Noviembre, 2026</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-gray-400 text-xs block">Capacidad</span>
+                            <span class="text-emerald-400 font-bold text-base">55 Plazas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 p-8 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-300 text-sm font-medium">Precio por Boleto Redondo:</span>
+                            <span class="text-3xl font-extrabold text-white">$600 <span class="text-sm font-normal text-gray-400">MXN</span></span>
+                        </div>
+                        <div class="bg-darkBg/60 p-4 rounded-2xl border border-gray-800 space-y-2 text-sm text-gray-300">
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-pink-500"></i>
+                                <span>Salida desde Querétaro (con parada en San Juan del Río)</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-pink-500"></i>
+                                <span>Anticipo para apartar: <strong>Sólo $300 MXN (50%)</strong></span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-pink-500"></i>
+                                <span>Regreso 1 hora después de finalizar el concierto</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-4">
+                        <a href="https://wa.me/5214428794383?text=¡Hola!%20Quiero%20apartar%20mi%20lugar%20para%20el%20concierto%20de%20Karol%20G%20en%20CDMX%20(13%20de%20noviembre).%20¿Me%20dan%20datos%20para%20el%20anticipo?" target="_blank"
+                           class="w-full flex items-center justify-center space-x-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-4 rounded-xl shadow-lg transition-all text-center">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Apartar Asiento para Karol G</span>
+                        </a>
+                        <p class="text-center text-xs text-gray-500 mt-3">Ningún asiento se da por apartado sin comprobante de pago del 50%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Asistente de IA Integrado -->
+    <section id="asistente-ia" class="py-20 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-cardBg rounded-3xl card-border p-8 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-10 h-10 rounded-xl bg-purple-600/30 text-purple-300 flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Asistente Virtual Baja Trip (IA)</h3>
+                        <p class="text-xs text-emerald-400 flex items-center space-x-1.5 mt-0.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span>En línea para resolver tus dudas</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Chat Container -->
+                <div id="chat-box" class="bg-darkBg/80 rounded-2xl p-4 h-64 overflow-y-auto space-y-3 text-sm border border-gray-800 mb-4">
+                    <div class="bg-purple-950/60 text-purple-200 p-3.5 rounded-2xl max-w-[85%] border border-purple-800/40">
+                        ¡Hola! 🚍 Soy el asistente virtual de Baja Trip. Pregúntame lo que necesites sobre nuestros viajes a conciertos desde Querétaro (horarios, salidas, precios o cómo apartar).
+                    </div>
+                </div>
+
+                <!-- Input Container -->
+                <div class="flex gap-3">
+                    <input type="text" id="user-input" placeholder="Escribe tu duda aquí (ej. ¿De dónde salen en Qro?)..." 
+                           class="flex-grow bg-darkBg border border-gray-800 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-purple-500 text-white">
+                    <button onclick="handleUserMessage()" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white px-6 py-3.5 rounded-xl font-bold text-sm transition shadow-lg">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="py-20 bg-darkBg/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold tracking-widest text-purple-400 uppercase mb-3">NUESTRA PROPUESTA DE VALOR</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">¿Por qué viajar con Baja Trip?</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-cardBg p-8 rounded-3xl card-border">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-900/50 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6">
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Salidas Puntuales</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Salimos desde puntos fijos en Querétaro con opción de parada intermedia en San Juan del Río.</p>
+                </div>
+                <div class="bg-cardBg p-8 rounded-3xl card-border">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-900/50 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Unidades Seguras</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Autobuses ejecutivos con seguro de viajero vigente, asientos reclinables y aire acondicionado.</p>
+                </div>
+                <div class="bg-cardBg p-8 rounded-3xl card-border">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-900/50 border border-blue-500/30 flex items-center justify-center text-blue-400 text-2xl mb-6">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Cero Desveladas</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Regreso garantizado 1 hora después de finalizar el concierto. Olvídate de manejar o pagar hotel.</p>
+                </div>
+                <div class="bg-cardBg p-8 rounded-3xl card-border">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-900/50 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Ambiente de Fans</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Viaja en comunidad con personas que comparten tu misma pasión por la música.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona -->
+    <section id="como-funciona" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold tracking-widest text-pink-400 uppercase mb-3">FÁCIL Y RÁPIDO</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">¿Cómo Funciona el Apartado?</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-cardBg p-8 rounded-3xl card-border relative">
+                    <span class="absolute -top-4 -left-4 w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 text-white font-extrabold text-lg flex items-center justify-center shadow-lg">01</span>
+                    <h4 class="text-xl font-bold text-white mt-4 mb-3">Eliges tu concierto</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Revisa nuestras rutas activas hacia CDMX, León o San Luis Potosí y escoge tu evento.</p>
+                </div>
+                <div class="bg-cardBg p-8 rounded-3xl card-border relative">
+                    <span class="absolute -top-4 -left-4 w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 text-white font-extrabold text-lg flex items-center justify-center shadow-lg">02</span>
+                    <h4 class="text-xl font-bold text-white mt-4 mb-3">Apartas con el 50%</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Envíanos un WhatsApp o usa nuestro chat de IA y deposita el anticipo para fijar tu asiento.</p>
+                </div>
+                <div class="bg-cardBg p-8 rounded-3xl card-border relative">
+                    <span class="absolute -top-4 -left-4 w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 text-white font-extrabold text-lg flex items-center justify-center shadow-lg">03</span>
+                    <h4 class="text-xl font-bold text-white mt-4 mb-3">¡Listo para viajar!</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Te agregamos al grupo de WhatsApp del viaje, recibes tu pase de abordar y nos vamos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkBg border-t border-gray-800 pt-16 pb-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div class="space-y-4 md:col-span-2">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-600 to-pink-500 flex items-center justify-center">
+                            <i class="fa-solid fa-bus text-white text-sm"></i>
+                        </div>
+                        <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                            BAJA TRIP
+                        </span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+                        Agencia de transporte ejecutivo redondo a conciertos y festivales desde Querétaro. Viaja seguro y vive tu música al máximo.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Contacto Directo</h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li>
+                            <a href="https://wa.me/5214428794383?text=¡Hola!%20Quiero%20informes%20de%20Baja%20Trip." target="_blank" class="hover:text-pink-400 flex items-center space-x-2">
+                                <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                                <span>WhatsApp: 442 879 4383</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-location-dot text-purple-400"></i>
+                            <span>Querétaro, Qro. (Salidas oficiales)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Redes Sociales</h5>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/transporte_a_conciertos" target="_blank" class="w-10 h-10 rounded-xl bg-cardBg border border-gray-800 flex items-center justify-center text-gray-300 hover:text-pink-400 hover:border-pink-500/50 transition-all">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
+                <p>&copy; 2026 Baja Trip Querétaro. Todos los derechos reservados.</p>
+                <p class="mt-2 sm:mt-0">Transporte ejecutivo con seguro de viajero y unidades autorizadas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script del Asistente de IA -->
+    <script>
+        function appendMessage(sender, text) {
+            const chatBox = document.getElementById('chat-box');
+            const div = document.createElement('div');
+            if (sender === 'user') {
+                div.className = 'bg-gray-800 text-white p-3.5 rounded-2xl max-w-[85%] ml-auto text-right';
+            } else {
+                div.className = 'bg-purple-950/60 text-purple-200 p-3.5 rounded-2xl max-w-[85%] border border-purple-800/40';
+            }
+            div.innerText = text;
+            chatBox.appendChild(div);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function handleUserMessage() {
+            const input = document.getElementById('user-input');
+            const text = input.value.trim();
+            if (!text) return;
+
+            appendMessage('user', text);
+            input.value = '';
+
+            setTimeout(() => {
+                const lower = text.toLowerCase();
+                let reply = "¡Claro! Salimos directo desde Querétaro en autobús ejecutivo con seguro de viajero. ¿Te gustaría que te redirija a nuestro WhatsApp oficial para apartar tu lugar con el 50% ($300 MXN)?";
+
+                if (lower.includes('lugar') || lower.includes('pago') || lower.includes('apartar') || lower.includes('boleto') || lower.includes('precio') || lower.includes('reservar')) {
+                    reply = "¡Perfecto! Para apartar tu lugar requieres el 50% de anticipo ($300 MXN). Te redirijo a nuestro WhatsApp para enviarte los datos y asegurar tu asiento de inmediato.";
+                    appendMessage('bot', reply);
+                    setTimeout(() => {
+                        window.open("https://wa.me/5214428794383?text=¡Hola!%20Hablé%20con%20el%20asistente%20virtual%20de%20la%20web%20y%20quiero%20apartar%20mi%20lugar.", "_blank");
+                    }, 1200);
+                    return;
+                } else if (lower.includes('donde') || lower.includes('salida') || lower.includes('queretaro')) {
+                    reply = "Las salidas son desde un punto fijo y seguro en Querétaro (con opción de parada en San Juan del Río). El horario exacto se comparte en el grupo de WhatsApp del viaje.";
+                } else if (lower.includes('regreso') || lower.includes('hora')) {
+                    reply = "El autobús emprende el viaje de regreso a Querétaro exactamente 1 hora después de haber finalizado el concierto.";
+                }
+
+                appendMessage('bot', reply);
+            }, 800);
+        }
+
+        document.getElementById('user-input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                handleUserMessage();
+            }
+        });
+    </script>
+</body>
+</html>
