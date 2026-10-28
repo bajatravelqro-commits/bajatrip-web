@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baja Trip | Transporte Ejecutivo a Conciertos desde Querétaro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#07090e] text-white min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white">
+
+    <!-- HEADER -->
+    <header class="border-b border-blue-900/40 bg-[#0b0f19]/95 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-md mx-auto px-4 py-3.5 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-full bg-blue-600/20 border border-blue-500/50 flex items-center justify-center shadow-lg shadow-blue-500/30">
+                    <i class="fa-solid fa-bus text-blue-400 text-sm"></i>
+                </div>
+                <span class="text-xl font-black tracking-wider text-white">BAJA<span class="text-blue-500 drop-shadow-[0_0_10px_rgba(59,130,246,0.6)]">TRIP</span></span>
+            </div>
+            <span class="text-[11px] bg-blue-950 text-blue-300 px-3 py-1 rounded-full border border-blue-500/30 font-medium">
+                📍 Salidas QRO
+            </span>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-w-md mx-auto px-4 py-6 flex-grow w-full space-y-6">
+        
+        <!-- HERO VISUAL -->
+        <div class="text-center space-y-2">
+            <h1 class="text-3xl font-black tracking-tight leading-tight">
+                Tu viaje, <span class="text-blue-500">tu música.</span>
+            </h1>
+            <p class="text-gray-400 text-xs font-light px-2">
+                Transporte redondo en autobús ejecutivo desde Querétaro. Cero estrés, puros fans.
+            </p>
+        </div>
+
+        <!-- TARJETA ACTIVA: KAROL G -->
+        <div class="bg-gradient-to-br from-gray-900 to-[#0b1329] rounded-2xl p-5 border border-blue-500/40 shadow-xl space-y-4">
+            <div class="flex justify-between items-start">
+                <div>
+                    <span class="bg-blue-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                        Ruta Activa
+                    </span>
+                    <h2 class="text-xl font-black text-white mt-2">Karol G en CDMX</h2>
+                    <p class="text-gray-300 text-xs mt-0.5">🗓️ 13 Nov, 2026 | Salida de Qro</p>
+                </div>
+                <div class="text-right bg-black/40 px-3 py-2 rounded-xl border border-blue-900/50">
+                    <span class="text-[10px] text-gray-400 block">Redondo</span>
+                    <span class="text-xl font-black text-blue-400">$600 <span class="text-[10px] text-gray-300">MXN</span></span>
+                </div>
+            </div>
+
+            <!-- ICONOS CLAVE RÁPIDOS -->
+            <div class="grid grid-cols-3 gap-2 pt-2 border-t border-blue-950 text-[11px] text-gray-300 text-center">
+                <div class="bg-black/30 p-2 rounded-lg border border-gray-800">
+                    <span class="block text-sm mb-0.5">🛡️</span> Seguro viajero
+                </div>
+                <div class="bg-black/30 p-2 rounded-lg border border-gray-800">
+                    <span class="block text-sm mb-0.5">⚡</span> Aparta $300
+                </div>
+                <div class="bg-black/30 p-2 rounded-lg border border-gray-800">
+                    <span class="block text-sm mb-0.5">🕒</span> Regreso 1hr
+                </div>
+            </div>
+
+            <!-- BOTÓN WHATSAPP -->
+            <div class="pt-1">
+                <a href="https://wa.me/5214428794383?text=¡Hola!%20Quiero%20apartar%20mi%20lugar%20con%20el%2050%%20para%20el%20concierto%20de%20Karol%20G" target="_blank" class="block w-full text-center bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 px-4 rounded-xl transition shadow-md shadow-blue-600/30 text-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Reservar Asiento en WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- AGENTE VIRTUAL DE IA -->
+        <div class="bg-gray-900/90 rounded-2xl p-4 border border-gray-800 space-y-3">
+            <div class="flex items-center space-x-2 border-b border-gray-800 pb-2">
+                <div class="w-2.5 h-2.5 bg-blue-500 rounded-full animate-pulse"></div>
+                <span class="font-bold text-xs text-white">Asistente IA Baja Trip</span>
+            </div>
+            
+            <div id="chat-box" class="bg-[#04060a] rounded-xl p-3 h-36 overflow-y-auto space-y-2 text-xs border border-gray-800">
+                <div class="bg-blue-950/60 text-blue-200 p-2.5 rounded-xl max-w-[90%] border border-blue-800/40">
+                    ¡Hola! Pregúntame sobre las salidas desde Qro o cómo apartar con el 50%.
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <input type="text" id="user-input" placeholder="Escribe tu duda aquí..." class="flex-grow bg-[#04060a] border border-gray-800 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-blue-500 text-white">
+                <button onclick="handleUserMessage()" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-xl font-bold text-xs transition">Enviar</button>
+            </div>
+        </div>
+
+        <!-- REDES SOCIALES CON ICONOS -->
+        <div class="text-center space-y-3 pt-2">
+            <span class="text-[10px] uppercase tracking-wider text-gray-500 font-semibold">Redes Oficiales Baja Trip</span>
+            <div class="flex justify-center gap-4">
+                <a href="https://instagram.com/transporte_a_conciertos" target="_blank" class="w-10 h-10 bg-gray-900 hover:bg-blue-600 border border-gray-800 rounded-xl flex items-center justify-center text-gray-300 hover:text-white transition text-lg shadow-sm">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="w-10 h-10 bg-gray-900 hover:bg-blue-600 border border-gray-800 rounded-xl flex items-center justify-center text-gray-300 hover:text-white transition text-lg shadow-sm">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank" class="w-10 h-10 bg-gray-900 hover:bg-blue-600 border border-gray-800 rounded-xl flex items-center justify-center text-gray-300 hover:text-white transition text-lg shadow-sm">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://wa.me/5214428794383" target="_blank" class="w-10 h-10 bg-gray-900 hover:bg-green-600 border border-gray-800 rounded-xl flex items-center justify-center text-green-400 hover:text-white transition text-lg shadow-sm">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-gray-800 bg-[#0b0f19] py-4 text-center text-[10px] text-gray-500">
+        <p>© 2026 Baja Trip Querétaro • Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
